@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+    <head>
+        <title>html table</title>
+    </head>
+    <body>
+        <H1>HTML table</H1>
+        <p>
+            for making tables in html by combining rows and columns.
+            we have tag (table).
+
+            <!--table tag-->
+            <table border = "1">          <!--attribute -table border in pixel-->
+                <tr>                        <!--table row-->
+                    <td>data 1</td>         
+                    <td>data 2</td>         <!--row column-->
+                    <td>data 3</td>
+                </tr>
+                <tr>                        <!--second row-->
+                    <td>data 4</td>
+                    <td>data 5</td> 
+                    <td>data 6</td>
+                </tr>
+                <tr>                        <!--third row-->
+                    <td>data 7</td>
+                    <td>data 8</td>
+                    <td>data 9</td>
+                </tr>
+            </table>
+        </p>
+
+        <!--heading in columns-->
+        <p>
+            (th) tag is used to give heading of columns or rows. 
+            here we make one more row in that row mention headings for columns.
+
+            <table border = "2">
+                <tr>                    <!--table row-->
+                    <th>column 1</th>  <!--table heading-->
+                    <th>column 2</th>
+                    <th>column 3</th>
+                </tr>
+                <tr>
+                    <td>data 1</td>
+                    <td>data 1</td>
+                    <td>data 1</td>
+                </tr>
+                <tr>
+                    <td>data 2</td>
+                    <td>data 2</td>
+                    <td>data 2</td>
+                </tr>
+                <tr>
+                    <td>data 3</td>
+                    <td>data 3</td>
+                    <td>data 3</td>
+                </tr>
+            </table>
+        </p>
+
+        <!--Heading in rows-->
+
+        <p>
+            here we write code to give heading in all rows by using (th) tag.
+            we need to add one more column in each but using (th) tag
+
+            <table border = "3"> 
+                <tr>
+                    <th>row 1</th>          <!--table heading-->
+                    <td>data 1</td>
+                    <td>data 2</td>
+                    <td>data 3</td>
+                </tr>
+                <tr>
+                    <th>row 2</th>          <!--table heading-->
+                    <td>data 1</td>
+                    <td>data 2</td>
+                    <td>data 3</td>
+                </tr>
+                <tr>
+                    <th>row 3</th>          <!--table heading-->
+                    <td>data 1</td>
+                    <td>data 2</td>
+                    <td>data 3</td>
+                </tr>
+            </table>
+        </p>
+
+        <!--elements-->
+        <p>
+            In this Html table not must use only text we can put every Html elements.
+            for eg.
+
+            <table border = "2"> 
+                <tr>
+                    <th>element row</th>
+                    <td>
+                        <img src="farhan.jpg" height="100px" width="100px">
+                    </td>
+                    <td>
+                        <a href="https://www.google.com" target="_blank">google</a>
+                    </td>
+                    <td>data 3</td>
+                </tr>
+                <tr>
+                    <td>data 4</td>
+                    <td>data 5</td>
+                    <td>data 6</td>
+                </tr>
+            </table>
+        </p>
+
+        <!--combining columns-->
+        <p>
+            <table border = "1">
+                <tr>
+                    <td colspan="2">data 1</td>  <!--combine two columns-->
+                    <td>data 3</td>
+                </tr>
+                <tr>
+                    <td>data 1</td>
+                    <td colspan="2">data 2</td>  <!--combine two colums-->
+                    
+                </tr>
+                <tr>
+                    <td>data 1</td>
+                    <td>data 2</td>
+                    <td>data 3</td>
+                </tr>
+                <tr>
+                    <td colspan="3">data 1</td>   <!--combine three columns-->
+                </tr>
+            </table>
+        </p>
+
+        <!--combining rows-->
+        <p>
+            <table border ="1">
+                <tr>
+                    <td rowspan="2">row 1,2</td>  <!--combine two row-->
+                    <td>data 2</td>
+                    <td>data 3</td>
+                </tr>
+                <tr>
+                    
+                    <td>data 2</td>
+                    <td rowspan="2">data 3</td>
+                </tr>
+                <tr>
+                    <td>data 1</td>
+                    <td>data 2</td>
+                </tr>
+                <tr>
+                    <td colspan="2">col 1,col 2</td>   <!--example of colspan also-->
+                    <td>data 3</td>
+                </tr>
+            </table>
+        </p>
+
+        <!--caption,tablehead,tablebody,tablefooter-->
+        <p>
+            for naming the table we have (caption) tag.
+            it name join with the table upper side of table.
+            We should 3 things in table for devloper (table heading),(table body),(table footer)
+            it not change much in ui.
+            <b>it is use to combine table in 3 parts</b>
+
+            <table border="1">
+            <caption>table example</caption>  <!--name of the table-->
+                <thead>         <!--header part of table-->
+                    <tr>
+                        <th>column 1</th>
+                        <th>column 2</th>
+                        <th>column 3</th>
+                    </tr>
+                </thead>
+                <tbody>             <!--body part-->
+                    <tr>
+                        <td>data 1</td>
+                        <td>data 1</td>
+                        <td>data 1</td>
+                    </tr>
+                    <tr>
+                        <td>data 1</td>
+                        <td>data 1</td>
+                        <td>data 1</td>
+                    </tr>
+                    <tr>
+                        <td>data 1</td>
+                        <td>data 1</td>
+                        <td>data 1</td>
+                    </tr>
+                </tbody>
+                <tfoot>         <!--footer-->
+                    <tr>
+                        <th>column 1</th>
+                        <th>column 2</th>
+                        <th>column 3</th>
+                    </tr>
+                </tfoot>
+
+                tfoot is used when table is long so we can put other page manage give heading.
+            </table>
+        </p>
+
+        <!--Nested table-->
+        <p>
+            nested table means table inside table or inner
+            Note: for making nested table we make same as outer table but inside any (td) always not (tr)
+            it is made only in column 
+            
+            <table border="1">
+                <tr>
+                    <td>data 1</td>
+                    <td>data 2</td>
+                    <td>data 3</td>
+                </tr>
+                <tr>
+                    <td>data 4</td>
+                    <td>                        <!--nested table-->
+                        <table border="1">      
+                            <tr>
+                                <td>N1</td>
+                                <td>N2</td>
+                            </tr>
+                            <tr>
+                                <td>N3</td>
+                                <td>N4</td>
+                            </tr>
+                        </table>                 
+                    </td>                       <!--nested table-->
+                    <td>data 6</td>
+                </tr>
+                <tr>
+                    <td>data 7</td>
+                    <td>data 8</td>
+                    <td>data 9</td>
+                </tr>
+            </table>
+            <br>
+        </p>
+
+
+        <!--nested table example level Advance-->
+        <p>
+            One more nested table example
+
+            <table border="1">
+                <caption><b>Nested tables</b></caption>
+            <thead>
+                <tr>                                <!--row 1-->
+                    <th>header column 1</th>
+                    <th>header column 2</th>
+                    <th>header column 3</th>
+                    <th>header column 4</th>
+                </tr>
+            </thead>
+            <tbody>                               <!--tbody-->
+                <tr>                              <!--row 2-->
+                    <td>Row 2-item 1</td>
+                    <td>Row 2-item 2</td>
+                    <td rowspan="2">
+                        <table border="1">
+                            <caption><b>row 2:nested table 1</b></caption>
+                            <tr>
+                                <th>row 1 header</th>
+                                <td>item</td>
+                            </tr>
+                            <tr>
+                                <th>row 2 header</th>
+                                <td>item</td>
+                            </tr>
+                            <tr>
+                                <th>row 3 header</th>
+                                <td>item</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>Row 2 - item 4 a second line</td>
+                </tr>
+                <tr>                            <!--row 3-->
+                    <td>
+                        <table border="1">
+                            <caption><b>Row 3:Nested table 2</b></caption>
+                            <tr>
+                                <th>Row 1 header</th>
+                                <td>item</td>
+                            </tr>
+                            <tr>
+                                <th>Row 2 header</th>
+                                <td>item</td>
+                            </tr>
+
+                        </table>
+                    </td>
+                    <td>row 3 - item 2</td>
+                    
+                    <td rowspan="2">row 3 - item 3</td>
+                </tr>
+                <tr>                            <!--row 4-->
+                    <td>row 4 item 1</td>
+                    <td>row 4 item 2</td>
+                    <td>row 4 - item 3 </td>
+                </tr>
+                <tr>                            <!--row 5-->
+                    <td colspan="4">row 5 - last row of outer table </td>
+                </tr>
+            </tbody>                        <!--tbody-->
+            </table>
+        </p>
+        <a href="file:///D:/html/4.div_span.html" title="div&span" target="_blank">next part</a>
+    </body>

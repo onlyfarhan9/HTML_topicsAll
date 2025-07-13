@@ -1,0 +1,249 @@
+<!--<DOCTYPE html>-->
+<!--<html>-->
+<!--<head>
+            <title> content </title>    <basic structure of html>
+        </head>-->
+<!--<body>
+                <p> content </p>
+        </body-->
+<!--</html>-->
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head> <!--impact on browser-->
+    <title>Basic included</title>
+    <meta name="viewport" content="width=device-width", initial-scale="1">
+</head>
+
+<body>
+    <!--about us section start-->
+    <p>
+        whatever we write in (body) tag it's visible on our webpage.
+        there are so many tag we can use in body tag.
+        !DOCTYPE is document type .there are different types of documents in html we require to declare and use
+        ex: MATHML,SVG svg means graphics for help coding we make graphics design.
+    </p>
+
+
+    <p>
+        Element : paragraph,image,link,video,audio etc
+        Attribute : addational information about element
+    </p>
+
+    <!--example of empty tags-->
+    Always we would not have tag for closing, some tags have content in their attribute.
+    <br>
+    ex : <img src="my image.jpg" height="300px" width="150px">,
+    <br>br line break <!--this is empty tag-->
+    <br>
+
+    <!--headings-->
+    <h1>H1 heading</h1>
+    <h2>H2 heading </h2>
+    <h3>H3 heading </h3>
+    <h4>H4 heading </h4>
+    <h5>H5 heading </h5>
+    <h6>H6 heading </h6>
+    <hr>
+
+    this is heading tag H1 there are 6 headings H1,H2 ....H6
+    and they become small in size from 1 to 6
+    for heading line we have used (hr) tag.
+    <br>
+
+    <!--paragraph-->
+    <p>This is paragraph tag</p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam id atque aut nihil recusandae aliquid ut
+        repudiandae eum. Ea, nesciunt enim totam quidem natus sit aliquid quisquam cupiditate amet!
+    </p>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui suscipit incidunt quae, sint, reprehenderit ipsum <a href="#read more">Read more</a>
+        doloribus quo architecto, asperiores repudiandae quas omnis consequuntur? Consequatur dignissimos ab, placeat
+        debitis ipsum cupiditate eaque dolore aperiam a exercitationem in quae, quasi dicta illo ut nostrum numquam.
+        Ipsum dolores impedit quo quaerat, dignissimos fugit ducimus quam laborum nisi nemo similique sint hic officia
+        enim ipsa porro nostrum. Vero dicta dignissimos alias assumenda id eligendi eos, labore commodi? Reiciendis
+        provident libero enim hic, voluptatibus porro repellendus vero molestias quidem dolorum vel quasi delectus
+        inventore fuga. Nisi quaerat quidem magni in error? Voluptatem pariatur deserunt commodi?
+        <a href="#More">More</a>
+    </p>
+
+    <pre>This is also paragraph tag if we want to print as it is like in editor, but its change the       font user able to know this is written in pre format
+    </pre>
+
+    <!--HTML formating-->
+    <p>
+        now see tags on formating HTML provides like bolding font,strong and many more
+        <br>
+        <!--&#9679--> <!--bullet point-->
+        &#9679; Bold tag &lt;b&gt; <b> Lorem ipsum </b> it's use to bold sentence or word.
+        <br>
+        <!--&lt less than<--> <!--&gt greater than-->
+        &#9679; strong tag &lt;strong&gt; <strong>it is use to highlight the main word in paragraph
+        </strong> change the font into bold but different meaning.
+        <br>
+        &#9679; &lt;i&gt; tag <i>it is use to make italic font</i>
+        <br>
+        &#9679; &lt;em&gt; it make the <em>italic font</em> it is use make value of sentence.
+        <br>
+        &#9679; &lt; small &gt; it is use to make small font of <small>character</small>
+        <br>
+        &#9679; <mark>mark</mark> tag it is use to highlight the charcter.
+        <br>
+        &#9679; <del>delete(del)</del> tag it work for deleting text of seen person.
+        <br>
+        &#9679; <ins>insert(ins)</ins> tag is use to underline the word of inserted.
+        <br>
+        &#9679; x<sub>2</sub> (subset tag)it is use to give power downword.
+        <br>
+        &#9679; y<sup>3</sup> it use to give power upward.
+        <br>
+        Code example: 
+        <code>var person;</code>
+
+    </p>
+
+    <!--Quatation and citation-->
+    <q>(q) tag this is our quote tag we write here our quotes</q>
+
+    <blockquote cite="https://www.google.com">(blockquote) tag loream loisel this is quotes tag used to write someone
+        quotes
+    </blockquote>
+
+    <!--abbribiation or acronium--> <!--shortcut-->
+    <abbr title="World health orgamization">WHO</abbr>
+    <br>
+    (abbr title="content") this tag is used to give hint of words and sentence when hovering.
+    <br>
+
+    <!--address-->
+    <address>kondhwa khurd pune</address>
+    <br>
+
+    <!--cite-->
+    <cite>The lost kid</cite> is written by ....
+    <br>
+    this tag is used to write author names and books names etc....
+    <br>
+
+    <!--html link-->
+    <p>
+        <H2>HTML link</H2>
+        <br>
+
+        <a href="https://www.google.com"> google </a>
+        <br>
+
+        if we want to jump another page through link with new tab.
+        one more tag <strong>(target = "_blank") </strong> this attribute is used in links.
+        <br>
+
+        <a href="https://www.youtube.com" target="_blank"> youtube </a>
+        <br>
+
+        For giving hint of link and anything like (abbribiation)<br>
+        we have the tag <b>(title = "content")</b>
+        <br>
+        <!--inline css to remove underline from link and title to hint -->
+        <a href="https://www.amazon.com" title="amazon" target="_blank" style="text-decoration:none">Amazon</a>
+        <br>
+
+        <!--local link-->
+    <p>
+        <b>How to make local link</b><br>
+        1. we need to make ancher tag using hastag# (&lt;a href = "#path_name"&gt; content &lt;/a&gt;)<br>
+        ex: On line 70
+        <br>
+
+        2. Make p tag (&lt;p id = "path_name"&gt;)
+        <br>
+        ex:On line 161
+
+    </p>
+    <p id="More">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel consequuntur repellendus nobis delectus, nam amet
+        culpa sapiente ab voluptate at mollitia aspernatur sunt quidem dolorem temporibus nostrum perferendis animi pnon
+        molestias velit, hic laborum dolor eaque. Neque similique architecto accusantium, fugiat illo sit nostrum! Natus
+        similique ducimus nisi harum consequatur sapiente, beatae sint facere voluptate vitae voluptatibus
+        necessitatibus tempora quae obcaecati provident? Ullam molestias provident saepe quam perferendis? Iste libero
+        voluptatem praesentium possimus temporibus sed, blanditiis iusto ex vitae totam exercitationem itaque
+        repellendus beatae accusantium aut est fuga maiores vel nam? Minima adipisci error dicta necessitatibus, dolorem
+        pariatur ea corrupti.
+    </p>
+
+    <H2>Email links</H2>
+    <p>
+        Contact us on : <a href="mailto:farhanansar62@gmail.com"> farhanansar62@gmail.com </a>
+        <br>
+        &lt;a href = "mailto:mail_name"&gt; mail_name &lt;/a&gt;
+        <br>
+        it link open default app automaticly.
+        <br>
+        If we want to mention subject then we need <b>attribute (subject) </b><br>
+        ex: <a href="mailto:farhanansar62@gmail.com?subject = my html">manager contact</a>
+        <br>
+        <a href="mailto:farhanansar62@gmail.com?subject=test">farhanansar62@gmail.com</a>
+    </p>
+    
+    <H2>Image in HTML</H2>
+    <p>
+        (img) tag this is empty tag<br>
+        its have attribute (src) source.<br>
+        (img src = "farhan.jpg")
+        <br>
+        img have attributes to manage image ex = height,width and many more.
+
+        ex:
+        <br>
+        <img src="farhan.jpg" height="300px" width="150px" title="my image">
+        <br>
+        <!--image set on right side-->
+        <img src="farhan.jpg" height="300px" width="150px" style="float:right">
+    </p>
+
+    <p id="read more">
+        syntax:(img src ="path" attribute1 = "value" attribute2 = "value")<br>
+
+        example:(img src ="farhan.jpg" height = "300px" width = "150px")<br>
+
+        alt attribute syntax = (img src ="farhanjpg" height = "300px" width = "150px" alt = "alternative image")<br>
+        example= <img src ="farhanjpg" height = "300px" width = "150px" alt = "alternative image">
+        <br>
+        (alt)This attribute defines an alternative text description of the image.
+        <br>
+        Browsers do not always display the image referenced by the element. This is the case for non-graphical browsers (including those used by people with visual impairments), if the user chooses not to display images, or if the browser cannot display the image because it is invalid or an unsupported type. In these cases, the browser may replace the image with the text defined in this element's alt attribute. You should, for these reasons and others, provide a useful value for alt whenever possible.
+        <br>
+        path with folder syntax<strong>(img src = "foldername/imagename")</strong>
+    </p>
+
+    <!--Marquee-->
+    <H2>Marquee</H2>
+
+    <p>Marquee tag is used to moving text.<br>
+       syntax = ((marquee) content (/marquee))<br>
+       
+       <marquee>This is a moving text</marquee>
+       <br>
+       We can change direct also by adding (direction="directionname") attribute.
+       Left,right,up,down.
+       <br>
+       <marquee direction = "right">This text moving right to left</marquee>
+    </p>
+
+    <p>
+       <b>further part of html is on next file </b>
+       <br>
+       <a href = "D:\html\2.Html_list.html" title = "Html lists" target="_blank" >next part</a>
+    </p>
+    
+
+
+</body>
+
+
+
+
+</html>

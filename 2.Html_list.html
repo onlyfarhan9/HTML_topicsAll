@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <title>Html lists</title>
+    </head>
+    <body>
+        <b>lets we talk about HTML lists.there are three types of HTML lists.<br>
+        1.ordered list 2.unordered list. 3.Description lists</b>
+        <br>
+        <!--ordered list-->
+        <H2>Ordered list</H2>
+        <hr>
+        <marquee direction="right">Html lists</marquee>
+        <p>
+            
+            1.Ordered list: That means the things which are in ordered.Its about sequence 
+            Ex 1,2,3,a,b,c etc
+            <br>
+            <!--order list-->
+            <!--its start default by 1,2,3..-->
+            <ol> 
+                    <li>Cofee</li>   <!--list-->
+                    <li>Tea</li>
+                    <li>Milk</li>
+            </ol>
+
+            <!--Start-->
+            We can change the startup sequence by adding attribute (ol start = "value")<br>
+            
+            <ol start = "10">
+                    <li>Farhan</li>
+                    <li>Zaid</li>
+                    <li>Shahid</li>
+            </ol>
+            Note: it will start only in numbers<br>
+
+            <!--Type-->
+            We can change all types of sequence ex-capital letters,small letters,numbers,roman numbers (I,i)
+            by instead of place of start to (type)<br>
+            
+            <ol type = "A">
+                    <li>Farhan</li>
+                    <li>Hamna</li>
+            </ol>
+
+            <!--roman numbers in capital (I)-->
+            <ol type="I">    
+                    <li>grapes</li>
+                    <li>mango</li>
+                    <li>apple</li>
+            </ol>
+
+            <!--roman numbers in small (i)-->
+            <ol type="i">    
+                <li>Monkey</li>
+                <li>Horse</li>
+                <li>Rabbit</li>
+            </ol>
+
+            <!--sublist or nested list-->
+
+            Note: It will always start from first alphabet A.
+            <br>
+            Might we want to make sublist list inside list.
+            <ol type = "A">     <!--outer list-->
+                    <li>Coffee
+                            <ol>        <!--inner list-->
+                            <li>black coffee</li>        <!--list item-->
+                            <li>Mocha</li>
+                            </ol>
+                    </li>
+
+                    <li>Milk
+                            <ol type ="i">
+                                <li>Cow milk</li>
+                                <li>Buffolow milk</li>
+                            </ol>
+                    </li>
+            </ol>
+        </p>
+
+
+        <!--Unordered list-->
+        <H2>Unordered list</H2>
+
+        <p>
+            Unorder list: Unordered list list means it's not have order or sequence expect number or letter.
+            It's directly made bullet points (ul)<br>
+            <!--unordered list-->
+            <ul>
+                <li>School</li>
+                <li>Collage</li>
+                <li>hospital</li>
+            </ul>
+
+            <!--Unordered sublist-->
+            <ul>
+                <li>Building
+                            <ul>
+                                <li>flats</li>
+                                <li>club</li>
+                                <li>parking</li>
+                            </ul>
+                </li>
+            </ul>
+
+            <!--Style-->
+            How to change sign of ul instead of bullet point.<br>
+            We have attribute (style) 1.Disc (default) 2.Circle 3.square 4.none (empty)<br>
+            (ul style = "list-style-type:sqaure;")
+
+            <ul style = "list-style-type:disc;">
+                <li>car</li>
+                <li>Bus</li>
+                <li>Train</li>
+            </ul>
+
+            <ul style = "list-style-type:circle;">
+                <li>Bike</li>
+                <li>cycle</li>
+                <li>scooter</li>
+            </ul>
+
+            <ul style = "list-style-type:square">
+                <li>Computer</li>
+                <li>laptop</li>
+                <li>tab</li>
+            </ul>
+
+            <ul style = "list-style-type:none;">
+                <li>game</li>
+                <li>Sports</li>
+                <li>Gym</li>
+            </ul>
+
+            <!--combine order and unordered-->
+            <ul style = list-style-type:square>
+                <li>Company
+                            <ol type="a">
+                                <li>Emphosis</li>
+                                <li>Travellx</li>
+                                <li>Emaar</li>
+                            </ol>
+                </li>
+            </ul>
+        </p>
+
+        <!--Description list-->
+        <H2>Description list</H2>
+    <p>
+            description list mean discription of lists <br>
+            ex - dictonary have list of words in and meaning of word that meaning is description.
+
+        <dl>    <!--description list-->
+            <dt>Coffee</dt>     <!--description term-->
+                <dd>- black hot drink</dd>      <!--description-->
+            <dt>Milk</dt>
+                <dd>-white cold drink</dd>
+        </dl>
+        <dl>
+            <dt>Monkey</dt>
+                <dd>-this is animal</dd>
+        </dl>
+        <dl>
+            <dt>Fruits</dt>
+                <dd>-Friuits include mango,apple,banana</dd>
+            <dt>vegetables</dt>
+                <dd>-vegatables include potato,tomato</dd>
+        </dl>
+    </p>
+    <a href="file:///D:/html/table.html" title = "table" target = "_blank">next part</a>
+
+    </body>
+</html>
